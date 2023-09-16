@@ -1,0 +1,133 @@
+:root {
+  /* CTAs  Focused  Active states  Links */
+  --primary-brand: #4d5ae5;
+  /* CTAs */
+  --pressed-state: #404bbf;
+  /* Overlays Shadows Headings */
+  --dark: #2e2f42;
+  /* Valid fields Success messages */
+  --success: #31d0aa;
+  /* Body text */
+  --text: #434455;
+  /* Helper text Deemphasized text */
+  --subtle-Text: #8e8f99;
+  /* Accent colorn Hairlines Subtle backgrounds */
+  --accent: #e7e9fc;
+
+  --Light: #f4f4fd;
+  --Modal-overlay: #2e2f42 40%;
+  --Hero-background: #2e2f42b2 70%;
+  /* Header,  team card background */
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
+}
+
+body {
+  background-color: var(white-background);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+/* Пропиши CSS-правила для скидання дефолтного підкреслення для посилань та маркерів у списках. */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-brand);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.166;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--primary-brand);
+}
+
+.navigation {
+  color: var(--dark);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  /* font-size: 16px; */
+}
+
+.contacts a {
+  /* font-size: 16px; */
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: #2e2f42;
+  font-style: normal;
+}
+
+.products-nav button {
+  color: var(--IRIS, #4d5ae5);
+  text-align: center;
+  background-color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--accent);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-brand);
+  color: var(--accent);
+}
+button:active {
+  background-color: var(--pressed-state);
+}
+.examples h3 {
+  color: var(--NAVY-BLUE, #2e2f42);
+
+  /* Header 3 */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.examples h4 {
+  color: var(--SLATE, #434455);
+
+  /* Body */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--Light);
+}
+
+.slogan {
+  /* Body */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+a .slogan-studio {
+  color: var(--Light);
+}

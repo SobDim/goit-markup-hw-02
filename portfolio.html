@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -17,16 +21,16 @@
     <header>
       <!-- navigation -->
       <nav>
-        <a href="./index.html">WebStudio</a>
+        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
         <ul class="navigation">
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
+          <li><a href="./index.html">Studio</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="">Contacts</a></li>
         </ul>
       </nav>
       <!-- Contacts -->
       <address>
-        <ul>
+        <ul class="contacts">
           <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
@@ -35,65 +39,84 @@
 
     <main>
       <!-- фільтр по продуктам компанії -->
-
-      <h2>Products</h2>
-
-      <ul class="products-nav">
-        <li><button type="button">All</button></li>
-        <li><button type="button">Web Site</button></li>
-        <li><button type="button">App</button></li>
-        <li><button type="button">Design</button></li>
-        <li><button type="button">Marketing</button></li>
-      </ul>
-
+      <section class="filter">
+        <ul class="products-nav">
+          <li><button type="button">All</button></li>
+          <li><button type="button">Web Site</button></li>
+          <li><button type="button">App</button></li>
+          <li><button type="button">Design</button></li>
+          <li><button type="button">Marketing</button></li>
+        </ul>
+      </section>
       <!-- приклади -->
-      <ul>
+      <h2>Products</h2>
+      <ul class="examples">
         <li>
-          <a href=""><img src="./images/p1.jpg" alt="Banking App" /></a>
+          <a href=""
+            ><img src="./images/p1.jpg" alt="Banking App" width="360"
+          /></a>
           <h3>Banking App Interface Concept</h3>
           <h4>App</h4>
         </li>
         <li>
-          <a href=""><img src="./images/p2.jpg" alt="Cashless Payment" /></a>
+          <a href=""
+            ><img src="./images/p2.jpg" alt="Cashless Payment" width="360"
+          /></a>
           <h3>Cashless Payment</h3>
           <h4>Marketing</h4>
         </li>
         <li>
-          <a href=""><img src="./images/p3.jpg" alt="Meditation App" /></a>
+          <a href=""
+            ><img src="./images/p3.jpg" alt="Meditation App" width="360"
+          /></a>
           <h3>Meditation App</h3>
           <h4>App</h4>
         </li>
         <li>
-          <a href=""><img src="./images/p4.jpg" alt="Taxi Service" /></a>
+          <a href=""
+            ><img src="./images/p4.jpg" alt="Taxi Service" width="360"
+          /></a>
           <h3>Taxi Service</h3>
           <h4>Marketing</h4>
         </li>
         <li>
-          <a href=""><img src="./images/p5.jpg" alt="screen wallpapers" /></a>
+          <a href=""
+            ><img src="./images/p5.jpg" alt="screen wallpapers" width="360"
+          /></a>
           <h3>Screen Illustrations</h3>
           <h4>Design</h4>
         </li>
         <li>
           <a href=""
-            ><img src="./images/p6.jpg" alt="girl listening online courses"
+            ><img
+              src="./images/p6.jpg"
+              alt="girl listening online courses"
+              width="360"
           /></a>
           <h3>Online Courses</h3>
           <h4>Marketing</h4>
         </li>
         <li>
-          <a href=""><img src="./images/p7.jpg" alt="Instagram Stories" /></a>
+          <a href=""
+            ><img src="./images/p7.jpg" alt="Instagram Stories" width="360"
+          /></a>
           <h3>Instagram Stories Concept</h3>
           <h4>Design</h4>
         </li>
         <li>
           <a href=""
-            ><img src="./images/p8.jpg" alt="women and bags of vegetables"
+            ><img
+              src="./images/p8.jpg"
+              alt="women and bags of vegetables"
+              width="360"
           /></a>
           <h3>Organic Food</h3>
           <h4>Web Site</h4>
         </li>
         <li>
-          <a href=""><img src="./images/p9.jpg" alt="cup of cappuccino" /></a>
+          <a href=""
+            ><img src="./images/p9.jpg" alt="cup of cappuccino" width="360"
+          /></a>
           <h3>Fresh Coffee</h3>
           <h4>Web Site</h4>
         </li>
@@ -102,8 +125,11 @@
 
     <footer>
       <!-- логотип -->
-      <a href="./index.html">WebStudio</a>
-      <p>
+      <a class="logo" href="./index.html"
+        ><span class="slogan-web">Web</span
+        ><span class="slogan-studio">Studio</span></a
+      >
+      <p class="slogan">
         Increase the flow of customers and <br />
         sales for your business with digital <br />
         marketing & growth solutions.
