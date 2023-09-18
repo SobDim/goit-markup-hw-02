@@ -1,133 +1,182 @@
 :root {
   /* CTAs  Focused  Active states  Links */
-  --primary-brand: #4d5ae5;
+  --iris: #4d5ae5;
   /* CTAs */
-  --pressed-state: #404bbf;
+  --ocean: #404bbf;
   /* Overlays Shadows Headings */
-  --dark: #2e2f42;
+  --navy-blue: #2e2f42;
   /* Valid fields Success messages */
-  --success: #31d0aa;
+  --green: #31d0aa;
   /* Body text */
-  --text: #434455;
+  --slate: #434455;
   /* Helper text Deemphasized text */
-  --subtle-Text: #8e8f99;
+  --light-slate: #8e8f99;
   /* Accent colorn Hairlines Subtle backgrounds */
-  --accent: #e7e9fc;
-
-  --Light: #f4f4fd;
-  --Modal-overlay: #2e2f42 40%;
-  --Hero-background: #2e2f42b2 70%;
+  --cornflower: #e7e9fc;
+  /* Light mode backgrounds
+Light mode Dialogs/alerts */
+  --cloud: #f4f4fd;
+  /* Overlay */
+  --navy-blue-modal: #2e2f42 40%;
+  /* Hero image background */
+  --grey: #2e2f42b2 70%;
   /* Header,  team card background */
-  --white-background: #ffffff;
-  --modal-background: #fcfcfc;
+  --white: #ffffff;
+  /* Modal background */
+  --dairy: #fcfcfc;
 }
 
 body {
-  background-color: var(white-background);
+  background-color: var(--white);
   color: var(--text);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-style: normal;
 }
-/* Пропиши CSS-правила для скидання дефолтного підкреслення для посилань та маркерів у списках. */
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
-a:hover {
-  color: var(--primary-brand);
+a:hover,
+button:hover {
+  color: var(--iris);
 }
 
+a:focus,
+button:focus {
+  color: var(--iris);
+}
+/* «C3» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору).
+
+«С4» Текст контактів в хедері змінює колір при ховері і фокусі. */
+
+/* шапка сайту */
+
+/* логотип в шапці */
 .logo {
   font-family: 'Raleway', sans-serif;
-  color: var(--dark);
-  font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.166;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  color: var(--navy-blue);
 }
 
 .logo span {
-  color: var(--primary-brand);
+  color: var(--iris);
 }
 
-.navigation {
-  color: var(--dark);
+/* навігація */
+
+.navigation-bar {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  /* font-size: 16px; */
+  color: var(--navy-blue);
 }
 
-.contacts a {
-  /* font-size: 16px; */
+.contacts-list-iten-link {
   line-height: 1.5;
   letter-spacing: 0.32px;
-  color: #2e2f42;
-  font-style: normal;
+  color: var(--slate);
 }
 
-.products-nav button {
-  color: var(--IRIS, #4d5ae5);
+/* портфоліо */
+/* кнопки */
+
+button {
+  cursor: pointer;
+}
+.products-list-item-btn {
+  color: var(--iris);
   text-align: center;
-  background-color: #f4f4fd;
+  background-color: var(--cloud);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
   border-radius: 4px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--accent);
-  cursor: pointer;
+  border: 1px solid var(--cornflower);
 }
 
-button:hover {
-  background-color: var(--primary-brand);
-  color: var(--accent);
+.products-list-item-btn:hover {
+  background-color: var(--ocean);
+  color: var(--white);
 }
-button:active {
-  background-color: var(--pressed-state);
-}
-.examples h3 {
-  color: var(--NAVY-BLUE, #2e2f42);
-
-  /* Header 3 */
-  font-family: Roboto;
+/* заголовки 3 */
+.examples-title,
+.feature-list-item-title,
+.team-list-item-name {
+  color: var(--navy-blue);
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.4px;
 }
-
-.examples h4 {
-  color: var(--SLATE, #434455);
-
-  /* Body */
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
+/* заголовки 4 */
+.examples-title-ex,
+.team-list-item-position,
+.feature-list-item-text {
+  color: var(--slate);
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
 footer {
-  background-color: var(--dark);
-  color: var(--Light);
+  background-color: var(--navy-blue);
+  color: var(--cloud);
 }
 
 .slogan {
   /* Body */
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 a .slogan-studio {
-  color: var(--Light);
+  color: var(--cloud);
+}
+
+.hero {
+  background-color: var(--navy-blue);
+}
+
+.hero {
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+}
+.hero-btn {
+  color: var(--white);
+  border-radius: 4px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+/* заголовки 2 */
+.products-title,
+.team-title {
+  color: var(--navy-blue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.111;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.team {
+  background-color: var(--cloud);
 }

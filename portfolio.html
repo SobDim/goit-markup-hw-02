@@ -20,114 +20,144 @@
   <body>
     <header>
       <!-- navigation -->
-      <nav>
+      <nav class="navigation-bar">
         <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="navigation">
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-list-link">
+            <a href="./index.html">Studio</a>
+          </li>
+          <li class="navigation-list-link">
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation-list-link"><a href="">Contacts</a></li>
         </ul>
       </nav>
       <!-- Contacts -->
-      <address>
-        <ul class="contacts">
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <address class="contacts">
+        <ul class="contacts-list">
+          <li class="contacts-list-iten">
+            <a class="contacts-list-iten-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-list-iten">
+            <a class="contacts-list-iten-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
 
     <main>
       <!-- фільтр по продуктам компанії -->
-      <section class="filter">
-        <ul class="products-nav">
-          <li><button type="button">All</button></li>
-          <li><button type="button">Web Site</button></li>
-          <li><button type="button">App</button></li>
-          <li><button type="button">Design</button></li>
-          <li><button type="button">Marketing</button></li>
+      <section class="products">
+        <ul class="products-list">
+          <li class="products-list-item">
+            <button class="products-list-item-btn" type="button">All</button>
+          </li>
+          <li class="products-list-item">
+            <button class="products-list-item-btn" type="button">
+              Web Site
+            </button>
+          </li>
+          <li class="products-list-item">
+            <button class="products-list-item-btn" type="button">App</button>
+          </li>
+          <li class="products-list-item">
+            <button class="products-list-item-btn" type="button">Design</button>
+          </li>
+          <li class="products-list-item">
+            <button class="products-list-item-btn" type="button">
+              Marketing
+            </button>
+          </li>
         </ul>
       </section>
+
       <!-- приклади -->
-      <h2>Products</h2>
-      <ul class="examples">
-        <li>
-          <a href=""
-            ><img src="./images/p1.jpg" alt="Banking App" width="360"
-          /></a>
-          <h3>Banking App Interface Concept</h3>
-          <h4>App</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./images/p2.jpg" alt="Cashless Payment" width="360"
-          /></a>
-          <h3>Cashless Payment</h3>
-          <h4>Marketing</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./images/p3.jpg" alt="Meditation App" width="360"
-          /></a>
-          <h3>Meditation App</h3>
-          <h4>App</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./images/p4.jpg" alt="Taxi Service" width="360"
-          /></a>
-          <h3>Taxi Service</h3>
-          <h4>Marketing</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./images/p5.jpg" alt="screen wallpapers" width="360"
-          /></a>
-          <h3>Screen Illustrations</h3>
-          <h4>Design</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="./images/p6.jpg"
-              alt="girl listening online courses"
-              width="360"
-          /></a>
-          <h3>Online Courses</h3>
-          <h4>Marketing</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./images/p7.jpg" alt="Instagram Stories" width="360"
-          /></a>
-          <h3>Instagram Stories Concept</h3>
-          <h4>Design</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="./images/p8.jpg"
-              alt="women and bags of vegetables"
-              width="360"
-          /></a>
-          <h3>Organic Food</h3>
-          <h4>Web Site</h4>
-        </li>
-        <li>
-          <a href=""
-            ><img src="./images/p9.jpg" alt="cup of cappuccino" width="360"
-          /></a>
-          <h3>Fresh Coffee</h3>
-          <h4>Web Site</h4>
-        </li>
-      </ul>
+      <section class="examples">
+        <h2>examples</h2>
+        <ul class="examples-list">
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img src="./images/p1.jpg" alt="Banking App" width="360"
+            /></a>
+            <h3 class="examples-title">Banking App Interface Concept</h3>
+            <h4 class="examples-title-ex">App</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img src="./images/p2.jpg" alt="Cashless Payment" width="360"
+            /></a>
+            <h3 class="examples-title">Cashless Payment</h3>
+            <h4 class="examples-title-ex">Marketing</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img src="./images/p3.jpg" alt="Meditation App" width="360"
+            /></a>
+            <h3 class="examples-title">Meditation App</h3>
+            <h4 class="examples-title-ex">App</h4>
+          </li>
+          <li class="examples-list-item-link" class="examples-list-item">
+            <a href=""
+              ><img src="./images/p4.jpg" alt="Taxi Service" width="360"
+            /></a>
+            <h3 class="examples-title">Taxi Service</h3>
+            <h4 class="examples-title-ex">Marketing</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img src="./images/p5.jpg" alt="screen wallpapers" width="360"
+            /></a>
+            <h3 class="examples-title">Screen Illustrations</h3>
+            <h4 class="examples-title-ex">Design</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img
+                src="./images/p6.jpg"
+                alt="girl listening online courses"
+                width="360"
+            /></a>
+            <h3 class="examples-title">Online Courses</h3>
+            <h4 class="examples-title-ex">Marketing</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img src="./images/p7.jpg" alt="Instagram Stories" width="360"
+            /></a>
+            <h3 class="examples-title">Instagram Stories Concept</h3>
+            <h4 class="examples-title-ex">Design</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img
+                src="./images/p8.jpg"
+                alt="women and bags of vegetables"
+                width="360"
+            /></a>
+            <h3 class="examples-title">Organic Food</h3>
+            <h4 class="examples-title-ex">Web Site</h4>
+          </li>
+          <li class="examples-list-item">
+            <a class="examples-list-item-link" href=""
+              ><img src="./images/p9.jpg" alt="cup of cappuccino" width="360"
+            /></a>
+            <h3 class="examples-title">Fresh Coffee</h3>
+            <h4 class="examples-title-ex">Web Site</h4>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
       <!-- логотип -->
+
       <a class="logo" href="./index.html"
-        ><span class="slogan-web">Web</span
-        ><span class="slogan-studio">Studio</span></a
+        ><span class="logo-web">Web</span
+        ><span class="logo-studio">Studio</span></a
       >
       <p class="slogan">
         Increase the flow of customers and <br />
