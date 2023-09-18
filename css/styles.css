@@ -28,11 +28,11 @@ Light mode Dialogs/alerts */
 
 body {
   background-color: var(--white);
-  color: var(--text);
+  color: var(--slate);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
-ul {
+.list {
   list-style-type: none;
 }
 a {
@@ -60,14 +60,15 @@ button:focus {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.166;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  color: var(--navy-blue);
+  color: var(--iris);
+  text-decoration: none;
 }
 
 .logo span {
-  color: var(--iris);
+  color: var(--navy-blue);
 }
 
 /* навігація */
@@ -99,7 +100,7 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   border: 1px solid var(--cornflower);
 }
 
@@ -155,15 +156,21 @@ a .slogan-studio {
   font-weight: 700;
   line-height: 1.07;
 }
+
 .hero-btn {
   color: var(--white);
-  border-radius: 4px;
+  /* border-radius: 4px; */
   background: var(--iris);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+}
+.hero-btn:hover {
+  color: var(--iris);
+  text-align: center;
+  background-color: var(--cloud);
 }
 /* заголовки 2 */
 .products-title,
