@@ -155,6 +155,7 @@ body {
 .list-text {
   letter-spacing: 0.32px;
   line-height: 1.5;
+  color: var(--slate);
 }
 
 /* футер */
