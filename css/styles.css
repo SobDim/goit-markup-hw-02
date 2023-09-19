@@ -97,9 +97,9 @@ body {
 }
 .button.primary:hover,
 .button.primary:focus {
-  color: var(--ocean);
-  background-color: var(--white);
+  background-color: var(--ocean);
 }
+
 .button.secondary {
   color: var(--iris);
   background-color: var(--cloud);
@@ -126,7 +126,7 @@ body {
   line-height: 1.07;
   letter-spacing: 1.12px;
 }
-
+/* секція команда */
 .team-section {
   background-color: var(--cloud);
 }
