@@ -88,16 +88,21 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  cursor: pointer;
 }
 .hero-btn {
   color: var(--white);
   background: var(--iris);
 }
+.products-list-btn {
+  color: var(--iris);
+  background-color: var(--cloud);
+}
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--ocean);
   text-align: center;
-  background-color: var(--cloud);
+  background-color: var(--cloud); #404BBF
 }
 .products-list-btn:hover,
 .products-list-btn:focus {
@@ -163,6 +168,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.footer > .logo-studio {
-  color: var(--cloud);
+.footer .logo-studio {
+  color: var(--cloud); 
 }
