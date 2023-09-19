@@ -82,91 +82,29 @@ body {
   color: var(--slate);
 }
 /* кнопки */
-
 .button {
-  cursor: pointer;
-}
-
-.products-list-btn {
-  color: var(--iris);
-  text-align: center;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
-  background-color: var(--cloud);
-}
-
-.products-list-btn:hover .products-list-btn:active {
-  color: var(--white);
-  background-color: var(--ocean);
-}
-
-/* «C3» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору).
-
-«С4» Текст контактів в хедері змінює колір при ховері і фокусі. */
-
-/* шапка сайту */
-
-/* логотип в шапці */
-/* портфоліо */
-
-.products-list-item-btn {
-  color: var(--iris);
-  text-align: center;
-  background-color: var(--cloud);
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  border: 1px solid var(--cornflower);
 }
-
-.products-list-item-btn:hover {
-  background-color: var(--ocean);
+.hero-btn {
   color: var(--white);
+  background: var(--iris);
 }
-/* заголовки 2 */
-.section-title {
-  color: var(--navy-blue);
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--);
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+  background-color: var(--cloud);
 }
-/* заголовки 3 */
-.list-title {
-  color: var(--navy-blue);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+.products-list-btn:hover,
+.products-list-btn:focus {
+  color: var(--white);
+  background-color: var(--ocean);
 }
-/* заголовки 4 */
-.list-text {
-  color: var(--slate);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.footer {
-  background-color: var(--navy-blue);
-  color: var(--cloud);
-}
-.footer .logo span {
-  color: var(--cloud);
-}
-.slogan {
-  /* Body */
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-}
-.footer > .logo-studio {
-  color: var(--cloud);
-}
-
+/* герой */
 .hero {
   background-color: var(--navy-blue);
 }
@@ -183,29 +121,48 @@ body {
   letter-spacing: 1.12px;
 }
 
-.button {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+.team-section {
+  background-color: var(--cloud);
+}
+.team-woker {
+  background-color: var(--white);
+}
+/* заголовки 2 */
+.section-title {
+  color: var(--navy-blue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+/* заголовки 3 */
+.list-title {
+  color: var(--navy-blue);
+  font-size: 20px;
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+/* заголовки 4 */
+.list-text {
+  letter-spacing: 0.32px;
   line-height: 1.5;
-  letter-spacing: 0.64px;
 }
 
-.hero-btn {
-  color: var(--white);
-  background: var(--iris);
+/* футер */
+
+.footer {
+  background-color: var(--navy-blue);
+  color: var(--cloud);
 }
-.hero-btn:hover,
-.hero-btn:hover {
-  color: var(--ocean);
-  text-align: center;
-  background-color: var(--cloud);
+
+.footer-text {
+  /* Body */
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
-.products-list-btn:hover,
-.products-list-btn:active {
-  color: var(--white);
-  background-color: var(--ocean);
-}
-. .team-section {
-  background-color: var(--cloud);
+.footer > .logo-studio {
+  color: var(--cloud);
 }
