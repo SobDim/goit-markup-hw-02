@@ -95,7 +95,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--);
+  color: var(--ocean);
   text-align: center;
   background-color: var(--cloud);
 }
