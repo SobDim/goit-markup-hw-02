@@ -42,10 +42,13 @@ body {
   text-decoration: none;
   font-style: normal;
 }
+.contacts {
+  text-decoration: none;
+}
 
 .link:hover,
 .link:focus {
-  color: var(--iris);
+  color: var(--ocean);
 }
 
 /* логотип */
@@ -159,7 +162,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-a .slogan-studio {
+.footer > .logo-studio {
   color: var(--cloud);
 }
 
