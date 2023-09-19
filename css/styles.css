@@ -17,9 +17,9 @@
 Light mode Dialogs/alerts */
   --cloud: #f4f4fd;
   /* Overlay */
-  --navy-blue-modal: #2e2f42 40%;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
   /* Hero image background */
-  --grey: #2e2f42b2 70%;
+  --grey: rgba(46, 47, 66, 0.7);
   /* Header,  team card background */
   --white: #ffffff;
   /* Modal background */
@@ -35,27 +35,21 @@ body {
 .list {
   list-style-type: none;
 }
-a {
+
+/* посилання */
+
+.link {
   text-decoration: none;
   font-style: normal;
 }
 
-a:hover,
-button:hover {
+.link:hover,
+.link:focus {
   color: var(--iris);
 }
 
-a:focus,
-button:focus {
-  color: var(--iris);
-}
-/* «C3» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору).
+/* логотип */
 
-«С4» Текст контактів в хедері змінює колір при ховері і фокусі. */
-
-/* шапка сайту */
-
-/* логотип в шапці */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -66,32 +60,53 @@ button:focus {
   color: var(--iris);
   text-decoration: none;
 }
-
 .logo span {
   color: var(--navy-blue);
 }
 
-/* навігація */
+/* голоана навігація */
 
-.navigation-bar {
+.site-nav-link {
+  color: var(--navy-blue);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  color: var(--navy-blue);
 }
 
-.contacts-list-iten-link {
+.contacts-link {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--slate);
 }
-
-/* портфоліо */
 /* кнопки */
 
-button {
+.button {
   cursor: pointer;
 }
+
+.products-list-btn {
+  color: var(--iris);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background-color: var(--cloud);
+}
+
+.products-list-btn:hover .products-list-btn:active {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+/* «C3» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору).
+
+«С4» Текст контактів в хедері змінює колір при ховері і фокусі. */
+
+/* шапка сайту */
+
+/* логотип в шапці */
+/* портфоліо */
+
 .products-list-item-btn {
   color: var(--iris);
   text-align: center;
@@ -100,7 +115,6 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  /* border-radius: 4px; */
   border: 1px solid var(--cornflower);
 }
 
@@ -108,10 +122,11 @@ button {
   background-color: var(--ocean);
   color: var(--white);
 }
+
 /* заголовки 3 */
 .examples-title,
-.feature-list-item-title,
-.team-list-item-name {
+.feature-list-title,
+.team-list-title {
   color: var(--navy-blue);
   font-size: 20px;
   font-weight: 500;
@@ -119,20 +134,21 @@ button {
   letter-spacing: 0.4px;
 }
 /* заголовки 4 */
-.examples-title-ex,
+.examples-text,
 .team-list-item-position,
-.feature-list-item-text {
+.feature-list-text {
   color: var(--slate);
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
-footer {
+.footer {
   background-color: var(--navy-blue);
   color: var(--cloud);
 }
-
+.footer .logo span {
+  color: var(--cloud);
+}
 .slogan {
   /* Body */
   line-height: 1.5;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework1</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,30 +18,31 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <!-- navigation -->
       <nav class="nav">
-        <a class="logo" href="./index.html">WebStudio</a>
-        <ul class="list">
-          <li class="site-nav">
-            <a href="./index.html">Studio</a>
+        <!-- логотип -->
+        <a class="logo link" href="./index.html">Web<span>Studio</span></a>
+        <ul class="site-nav list">
+          <li>
+            <a class="site-nav-link link" href="./index.html">Studio</a>
           </li>
-          <li class="list-link">
-            <a href="./portfolio.html">Portfolio</a>
+          <li>
+            <a class="site-nav-link link" href="./portfolio.html">Portfolio</a>
           </li>
-          <li class="list-link"><a href="">Contacts</a></li>
+          <li><a class="site-nav-link link" href="">Contacts</a></li>
         </ul>
       </nav>
       <!-- Contacts -->
-      <address class="contacts">
-        <ul class="contacts-list">
-          <li class="contacts-list-iten">
-            <a class="contacts-list-iten-link" href="mailto:info@devstudio.com"
+      <address>
+        <ul class="contacts list">
+          <li>
+            <a class="contacts-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-list-iten">
-            <a class="contacts-list-iten-link" href="tel:+110001111111"
+            <a class="contacts-link link" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -50,39 +51,39 @@
     </header>
 
     <main>
-      <!-- слоган -->
+      <!-- ГЕРОЙ -->
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button class="hero-btn button" type="button">Order Service</button>
       </section>
       <!-- feature -->
       <section class="feature">
         <h2>feature</h2>
-        <ul class="feature_list">
-          <li class="feature-list-item">
-            <h3 class="feature-list-item-title">Strategy</h3>
-            <p class="feature-list-item-text">
+        <ul class="feature-list list">
+          <li>
+            <h3 class="feature-list-title">Strategy</h3>
+            <p class="feature-list-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
           <li>
-            <h3 class="feature-list-item-title">Punctuality</h3>
-            <p class="feature-list-item-text">
+            <h3 class="feature-list-title">Punctuality</h3>
+            <p class="feature-list-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li>
-            <h3 class="feature-list-item-title">Diligence</h3>
-            <p class="feature-list-item-text">
+            <h3 class="feature-list-title">Diligence</h3>
+            <p class="feature-list-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li>
-            <h3 class="feature-list-item-title">Technologies</h3>
-            <p class="feature-list-item-text">
+            <h3 class="feature-list-title">Technologies</h3>
+            <p class="feature-list-text">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -92,26 +93,26 @@
 
       <section class="products">
         <h2 class="products-title">What are we doing</h2>
-        <ul class="products-list">
-          <li class="products-list-item">
+        <ul class="products-list list">
+          <li>
             <img
-              class="products-list-item-img"
+              class="products-list-img"
               src="./images/img-1.jpg"
               alt="monitor"
               width="360"
             />
           </li>
-          <li class="products-list-item">
+          <li>
             <img
-              class="products-list-item-img"
+              class="products-list-img"
               src="./images/img-2.jpg"
               alt="mobile phone"
               width="360"
             />
           </li>
-          <li class="products-list-item">
+          <li>
             <img
-              class="products-list-item-img"
+              class="products-list-img"
               src="./images/img-3.jpg"
               alt="web applications"
               width="360"
@@ -122,59 +123,55 @@
       <!-- Team   -->
       <section class="team">
         <h2 class="team-title">Our Team</h2>
-        <ul class="team-list">
-          <li class="team-list-item">
+        <ul class="team-list list">
+          <li>
             <img
-              class="team-list-item-img"
+              class="team-list-img"
               src="./images/Team-Card-1.jpg"
               alt="Mark Guerrero"
               width="264"
             />
-            <h3 class="team-list-item-name">Mark Guerrero</h3>
-            <h4 class="team-list-item-position">Product Designer</h4>
+            <h3 class="team-list-name">Mark Guerrero</h3>
+            <h4 class="team-list-position">Product Designer</h4>
           </li>
-          <li class="team-list-item">
+          <li>
             <img
-              class="team-list-item-img"
+              class="team-list-img"
               src="./images/Team-Card-2.jpg"
               alt="Tom Ford"
               width="264"
             />
-            <h3 class="team-list-item-name">Tom Ford</h3>
+            <h3 class="team-list-name">Tom Ford</h3>
             <h4 class="team-list-item-position">Frontend Developer</h4>
           </li>
-          <li class="team-list-item">
+          <li>
             <img
-              class="team-list-item-img"
+              class="team-list-img"
               src="./images/Team-Card-3.jpg"
               alt="Camila Garcia"
               width="264"
             />
-            <h3 class="team-list-item-name">Camila Garcia</h3>
-            <h4 class="team-list-item-position">Marketing</h4>
+            <h3 class="team-list-title">Camila Garcia</h3>
+            <h4 class="team-list-text">Marketing</h4>
           </li>
-          <li class="team-list-item">
+          <li>
             <img
-              class="team-list-item-img"
+              class="team-list-img"
               src="./images/Team-Card-4.jpg"
               alt="Daniel Wilson"
               width="264"
             />
-            <h3 class="team-list-item-name">Daniel Wilson</h3>
-            <h4 class="team-list-item-position">UI Designer</h4>
+            <h3 class="team-list-title">Daniel Wilson</h3>
+            <h4 class="team-list-text">UI Designer</h4>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <!-- логотип -->
-
-      <a class="logo" href="./index.html"
-        ><span class="logo-web">Web</span
-        ><span class="logo-studio">Studio</span></a
-      >
-      <p class="slogan">
+      <a class="logo link" href="./index.html">Web<span>Studio</span></a>
+      <p class="footer-text">
         Increase the flow of customers and <br />
         sales for your business with digital <br />
         marketing & growth solutions.
