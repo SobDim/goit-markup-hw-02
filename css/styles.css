@@ -83,29 +83,30 @@ body {
 }
 /* кнопки */
 .button {
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  text-align: center;
   cursor: pointer;
 }
-.hero-btn {
+.button.primary {
   color: var(--white);
   background: var(--iris);
 }
-.products-list-btn {
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--ocean);
+  background-color: var(--white);
+}
+.button.secondary {
   color: var(--iris);
   background-color: var(--cloud);
 }
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--ocean);
-  text-align: center;
-  background-color: var(--cloud); #404BBF
-}
-.products-list-btn:hover,
-.products-list-btn:focus {
+
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--white);
   background-color: var(--ocean);
 }
@@ -169,5 +170,5 @@ body {
   letter-spacing: 0.32px;
 }
 .footer .logo-studio {
-  color: var(--cloud); 
+  color: var(--cloud);
 }
