@@ -122,11 +122,18 @@ body {
   background-color: var(--ocean);
   color: var(--white);
 }
-
+/* заголовки 2 */
+.section-title {
+  color: var(--navy-blue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.111;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
 /* заголовки 3 */
-.examples-title,
-.feature-list-title,
-.team-list-title {
+.list-title {
   color: var(--navy-blue);
   font-size: 20px;
   font-weight: 500;
@@ -134,9 +141,7 @@ body {
   letter-spacing: 0.4px;
 }
 /* заголовки 4 */
-.examples-text,
-.team-list-item-position,
-.feature-list-text {
+.list-text {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -188,18 +193,7 @@ a .slogan-studio {
   text-align: center;
   background-color: var(--cloud);
 }
-/* заголовки 2 */
-.products-title,
-.team-title {
-  color: var(--navy-blue);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.111;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-}
 
-.team {
+.team-section {
   background-color: var(--cloud);
 }
